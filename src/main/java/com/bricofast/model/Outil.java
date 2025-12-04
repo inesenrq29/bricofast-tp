@@ -34,5 +34,9 @@ public class Outil {
     public double getPrixParJour() {
         return prixParJour;
     }
+
+    public String getNom() {
+        return nom;
+    }
 }
 
