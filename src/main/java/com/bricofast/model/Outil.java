@@ -8,7 +8,7 @@ public class Outil {
     private boolean disponibilite;
 
 
-    public Outil(int id, String nom, double prixParJour, boolean disponibilite) {
+    public Outil(final int id, final String nom, final double prixParJour, final boolean disponibilite) {
         this.id = id;
         this.nom = nom;
         this.prixParJour = prixParJour;
@@ -21,6 +21,18 @@ public class Outil {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public boolean isDisponible() {
+        return disponibilite;
+    }
+
+    public void setDisponibilite(boolean disponibilite) {
+        this.disponibilite = disponibilite;
+    }
+
+    public double getPrixParJour() {
+        return prixParJour;
     }
 }
 
